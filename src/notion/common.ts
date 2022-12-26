@@ -38,7 +38,7 @@ export function richText(
     italic: false,
     code: false,
     color: 'default' as const,
-    ...((options.annotations as RichText['annotations']) || {}),
+    ((options.annotations as RichText['annotations']) || {}),
   };
 
   if (options.type === 'equation')
